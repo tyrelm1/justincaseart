@@ -4,13 +4,8 @@
     font-family: Arial, sans-serif;
     background: url("../images/colorful-2174045_1920.png");
     background-size:auto
-    background-position: right bottom;
-    background-repeat: no repeat;
-
 }
 
-
->>>>>>> main
 header {
     background-color: #333;
     color: #fff;
@@ -78,6 +73,7 @@ nav a:hover {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
     top: 100px;
 }
+
 .text-overlay h2 {
     font-size: 2em;
     margin-bottom: 10px;
@@ -98,13 +94,10 @@ nav a:hover {
 }
 
 footer {
-
-
+    position:fixed;
     background-color: #333;
     color: #fff;
     text-align: center;
-    position: fixed;
-
     padding: 1em;
     bottom: 0;
     width: 100%;
@@ -141,45 +134,3 @@ footer {
     background-color: #ddd;
     color: #333;
 }
-
- 
-/*---------------------------------------------media queries*/
-
-@media screen and (max-width: 768px) {
-    body {
-        background-size: cover;
-    }
-
-    .text-overlay {
-        top: 50%;
-    }
-
-    .landing-image {
-        height: 300px;
-    }
-
-/*---------------------------------------------media queries*/
-
-    @media only screen and (max-width: 600px) {
-
-        /* Adjust styles for small screens (e.g., smartphones) */
-        .hero {
-            padding-top: 80px;
-            /* Add some padding to push the content down */
-        }
-        .text-overlay {
-            margin-top: 40px;
-            /* Add margin to the top of the text overlay */
-        }
-
-        /* Add more styles as needed for smaller screens */
-    }
-
-/*---------------------------------------------media queries*/
-
-    @media screen and (max-width: 480px) {
-        .text-overlay 
-            top: 70%;
-        }
-    
-

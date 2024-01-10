@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: url("assets/images/colorful-2174045_1920.png");
+    background: url("../images/colorful-2174045_1920.png");
+    background-size:auto
 }
 
 header {

@@ -78,6 +78,7 @@ nav a:hover {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
     top: 100px;
 }
+
 .text-overlay h2 {
     font-size: 2em;
     margin-bottom: 10px;
@@ -98,13 +99,10 @@ nav a:hover {
 }
 
 footer {
-
-
+    position:fixed;
     background-color: #333;
     color: #fff;
     text-align: center;
-    position: fixed;
-
     padding: 1em;
     bottom: 0;
     width: 100%;
@@ -183,3 +181,4 @@ footer {
         }
     
 
+gi

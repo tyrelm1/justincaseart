@@ -1,54 +1,13 @@
+/* General Styles */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background: url("../images/colorful-2174045_1920.png");
-    background-size:  auto
-}
-*/ contact form*//
-form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-        
-        label {
-            display: block;
-            margin-bottom: 8px;
-        }
-        
-        input, textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-        }
-        
-        button {
-            background-color: #007BFF;
-            color: #fff;
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-.form-box{
-    position:fixed;
-    left:900px;
-    width:700px;
-    height:190px;
-    padding-bottom:100px;
-
-    
-
+    background-size: auto;
 }
 
-    /* contact form */
-
-
+/* Header Styles */
 header {
     background-color: #333;
     color: #fff;
@@ -58,77 +17,11 @@ header {
     align-items: center;
 }
 
-
-        
-
-
 .logo {
     flex-grow: 1;
 }
 
-.header-container {
-    background-color: rgba(17, 16, 16, 0.822);
-    /* Background color with transparency */
-    border-radius: 10px;
-    /* Border radius for rounded corners */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    /* Box shadow for a subtle effect */
-    padding: 20px;
-    /* Padding inside the container */
-    max-width: 800px;
-    /* Maximum width of the container */
-    margin: 20px auto;
-    /* Center the container */
-}
-
-#media-gallerygrid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 10px auto 50px auto; /* Update this line to center the gallery */
-    padding: 50px;
-    box-sizing: border-box;
-    top: 200px;
-}
-    
-
-.gallery {
-    flex: 0 1 calc(25% - 20px);
-    /* Divide the available width by 3 for 3 items per row */
-    margin-bottom: 20px;
-    margin-right: 20px;
-    /* Adjust this value to add spacing between products */
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    padding: 8px;
-    box-sizing: border-box;
-    height: auto;
-  
-}
-
-.gallery img {
-    width: 100%;
-    /* Set the width to 100% to make the image fill the container */
-    height: 100%;
-    /* Allow the height to adjust proportionally */
-    max-width: 100%;
-}
-
-#gallerytext h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    text-align: center;
-    color: #fff;
-}
-
-#gallerytext p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #fff;
-}
-
+/* Navigation Styles */
 nav {
     background-color: #333;
     overflow: hidden;
@@ -156,6 +49,7 @@ nav a:hover {
     color: #333;
 }
 
+/* Hero and Landing Styles */
 .hero {
     position: relative;
     text-align: center;
@@ -184,14 +78,10 @@ nav a:hover {
     top: 100px;
 }
 
-.text-overlay h2 {
+.text-overlay h2,
+.text-overlay p {
     font-size: 2em;
     margin-bottom: 10px;
-}
-
-.text-overlay p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
 }
 
 .text-overlay a {
@@ -203,7 +93,7 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/*iframe google map*/
+/* Google Map Styles */
 #map {
     position: relative;
     width: 100%;
@@ -212,150 +102,23 @@ nav a:hover {
     margin: 0;
 }
 
-/*gallery page header and paragraph*/
+/* About Me Styles */
 
-
-/* Add styles for the header container */
 .header-container {
     background-color: rgba(17, 16, 16, 0.822);
-    /* Background color with transparency */
-    border-radius: 10px;
-    /* Border radius for rounded corners */
+    border-radius: 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    /* Box shadow for a subtle effect */
-    padding: 20px;
-    /* Padding inside the container */
+    padding: 100px;
     max-width: 800px;
-    /* Maximum width of the container */
-    margin: 20px auto;
-    /* Center the container */
+    margin: 0px auto 20px;
     background-position: center;
 }
-
-#gallerytext h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    text-align: center;
-    color: #fff;
-}
-
-#gallerytext p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #fff;
-}
-
-
-.gallery img:hover {
-    transform: scale(1.1);
-}
-
-/*about me page*/
-
-.about-me-container {
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.685);
-    border: 2px solid rgba(0, 0, 0, 0.473);
-    border-radius: 10px;
-    margin-top: 0;
-}
-
 .about-me-h1 {
     color: #fff;
     text-align: center;
-
 }
 
-.paragraph {
-    font-size: 19px;
-    color: #fff;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 500px;
-    margin-bottom: 20px;
-}
-
-.img2 {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Your existing styles for footer go here */
-
-
-/*iframe google map*/
-#map {
-    position: relative;
-    width: 100%;
-    height: 600px;
-    border: 0;
-    margin: 0;
-}
-
-/*gallery page header and paragraph*/
-
-
-/* Add styles for the header container */
-.header-container {
-    background-color: rgba(17, 16, 16, 0.822);
-    /* Background color with transparency */
-    border-radius: 10px;
-    /* Border radius for rounded corners */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    /* Box shadow for a subtle effect */
-    padding: 20px;
-    /* Padding inside the container */
-    max-width: 800px;
-    /* Maximum width of the container */
-    margin: 20px auto;
-    /* Center the container */
-    background-position: center;
-}
-
-#gallerytext h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    text-align: center;
-    color: #fff;
-}
-
-#gallerytext p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #fff;
-}
-
-
-.gallery img:hover {
-    transform: scale(1.1);
-}
-
-/*about me page*/
-
-.about-me-container {
-    background-color: rgba(17, 16, 16, 0.822);
-    /* Background color with transparency */
-    border-radius: 10px;
-    margin-top: 0;
-}
-
-.about-me-h1 {
-    color: #fff;
-    text-align: center;
-
-}
-
-.paragraph {
+.about-p {
     font-size: 19px;
     color: #fff;
     text-align: center;
@@ -375,28 +138,65 @@ nav a:hover {
 
 
 
+/* Gallery Styles */
+#media-gallerygrid {
+    display: grid;
+    margin: 0 auto;
+    max-width: 600px; /* Set a specific width for your grid container */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.gallery {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid transparent; /* Border style */
+    transition: border-color 0.3s; /* Transition for hover effect */
+}
+
+.gallery:hover {
+    border-color: #fff; /* Border color on hover */
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    border-radius: 10px;
+    display: block;
+}
 
 
-/* Your existing styles for footer go here */
+#gallery-text h1 {
+    font-size: 2.5em; /* Adjust font size as needed */
+    color: #fff; /* Set the desired header text color */
+    text-align: center;
+}
 
+#gallery-text p {
+    font-size: 16px; /* Adjust font size as needed */
+    color: #fff; /* Set the desired paragraph text color */
+    margin: 0 auto;
+    max-width: 500px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
 
-footer {
-    position: fixed;
+/* Footer Styles */
+.footer {
     position: fixed;
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 0;
+    padding: 0px;
     bottom: 0;
     width: 100%;
-    z-index: 98 !important;
-    margin-top: 600px;
-    margin-top: 600px;
+    z-index: 90%;
 }
 
-
-
-.social-networks {
+.footer .social-networks {
     list-style: none;
     padding: 0;
     display: flex;
@@ -404,31 +204,60 @@ footer {
     margin-top: 10px;
 }
 
-.social-networks li {
+.footer .social-networks li {
     margin: 0 10px;
 }
 
-.social-networks a {
+.footer .social-networks a {
     color: #fff;
     text-decoration: none;
     font-size: 1.5em;
 }
 
-.cta-button {
-    border-radius: 5px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
-    background: #0026ff;
-    z-index: 100;
+.footer p {
+    margin-top: 10px; /* Adjust the margin as needed */
 }
 
-.cta-button:hover {
-    background-color: #ddd;
-    color: #333;
+/* Contact Form Styles */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
-/*media queries with 768px and above*/
+label {
+    display: block;
+    margin-bottom: 8px;
+}
 
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-box {
+    position: fixed;
+    left: 900px;
+    width: 700px;
+    height: 190px;
+    padding-bottom: 100px;
+}
+
+/* Media Queries */
 @media only screen and (max-width: 768px) {
     #media-gallerygrid {
         display: grid;
@@ -447,119 +276,34 @@ footer {
     }
 }
 
-
 @media only screen and (max-width: 600px) {
-
-    /* Adjustments for smaller screens */
     header {
         flex-direction: column;
-        /* Stack navigation below the logo on smaller screens */
     }
 
     .nav-container {
         flex-direction: column;
         align-items: center;
-        /* Center the navigation links */
     }
 
     nav a {
         padding: 10px;
-        /* Adjust padding for smaller touch targets */
     }
 
-    .hero {
-        text-align: center;
-        /* Center the text in the hero section */
-    }
-
+    .hero,
     .text-overlay {
         width: 90%;
-        /* Adjust the width for better readability on smaller screens */
     }
 
     .cta-button {
         padding: 10px 20px;
-        /* Adjust button padding for smaller touch targets */
     }
 
     .social-networks {
         margin-top: 20px;
-        /* Increase spacing between social icons */
     }
 
     footer {
         text-align: center;
-        /* Center the text in the footer */
-    }
-
-
-}
-
-
-
-/*media queries with 768px and above*/
-
-@media only screen and (max-width: 768px) {
-    #media-gallerygrid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .gallery {
-        flex: 0 1 calc(100% - 20px);
-        margin-right: 0;
-    }
-
-    #map {
-        width: 100%;
-        height: 300px;
-    }
-
-}
-
-
-@media only screen and (max-width: 600px) {
-
-    /* Adjustments for smaller screens */
-    header {
-        flex-direction: column;
-        /* Stack navigation below the logo on smaller screens */
-    }
-
-    .nav-container {
-        flex-direction: column;
-        align-items: center;
-        /* Center the navigation links */
-    }
-
-    nav a {
-        padding: 10px;
-        /* Adjust padding for smaller touch targets */
-    }
-
-    .hero {
-        text-align: center;
-        /* Center the text in the hero section */
-    }
-
-    .text-overlay {
-        width: 90%;
-        /* Adjust the width for better readability on smaller screens */
-    }
-
-    .cta-button {
-        padding: 10px 20px;
-        /* Adjust button padding for smaller touch targets */
-    }
-
-    .social-networks {
-        margin-top: 20px;
-        /* Increase spacing between social icons */
-    }
-
-    footer {
-        text-align: center;
-        /* Center the text in the footer */
     }
 }

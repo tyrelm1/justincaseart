@@ -3,14 +3,15 @@
     padding: 0;
     font-family: Arial, sans-serif;
     background: url("../images/colorful-2174045_1920.png");
-    background-size:auto
+    background-size: auto;
     background-position: right bottom;
-    background-repeat: no repeat;
-
+    background-repeat: no-repeat;
 }
 
 
->>>>>>> main
+
+
+
 header {
     background-color: #333;
     color: #fff;
@@ -46,10 +47,10 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
-    background-color: #ddd;
-    color: #333;
-}
+    nav a:hover {
+        background-color: #ddd;
+        color: #333;
+    }
 
 .hero {
     position: relative;
@@ -79,27 +80,27 @@ nav a:hover {
     top: 100px;
 }
 
-.text-overlay h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
+    .text-overlay h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
 
-.text-overlay p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
+    .text-overlay p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
 
-.text-overlay a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
+    .text-overlay a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
 
 footer {
-    position:fixed;
+    position: fixed;
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -117,15 +118,15 @@ footer {
     margin-top: 10px;
 }
 
-.social-networks li {
-    margin: 0 10px;
-}
+    .social-networks li {
+        margin: 0 10px;
+    }
 
-.social-networks a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5em;
-}
+    .social-networks a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
 
 .cta-button {
     border-radius: 5px;
@@ -135,50 +136,7 @@ footer {
     z-index: 100;
 }
 
-.cta-button:hover {
-    background-color: #ddd;
-    color: #333;
-}
-
- 
-/*---------------------------------------------media queries*/
-
-@media screen and (max-width: 768px) {
-    body {
-        background-size: cover;
+    .cta-button:hover {
+        background-color: #ddd;
+        color: #333;
     }
-
-    .text-overlay {
-        top: 50%;
-    }
-
-    .landing-image {
-        height: 300px;
-    }
-
-/*---------------------------------------------media queries*/
-
-    @media only screen and (max-width: 600px) {
-
-        /* Adjust styles for small screens (e.g., smartphones) */
-        .hero {
-            padding-top: 80px;
-            /* Add some padding to push the content down */
-        }
-        .text-overlay {
-            margin-top: 40px;
-            /* Add margin to the top of the text overlay */
-        }
-
-        /* Add more styles as needed for smaller screens */
-    }
-
-/*---------------------------------------------media queries*/
-
-    @media screen and (max-width: 480px) {
-        .text-overlay 
-            top: 70%;
-        }
-    
-
-gi

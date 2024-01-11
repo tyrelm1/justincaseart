@@ -72,6 +72,7 @@ button {
 }
     
 
+
 .gallery {
     flex: 0 1 calc(25% - 20px);
     /* Divide the available width by 3 for 3 items per row */
@@ -85,7 +86,6 @@ button {
     height: auto;
   
 }
-
 .gallery img {
     width: 100%;
     /* Set the width to 100% to make the image fill the container */

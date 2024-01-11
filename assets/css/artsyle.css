@@ -20,6 +20,37 @@ header {
     flex-grow: 1;
 }
 
+#media-gallerygrid{
+     display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ max-width: 1200px;
+ margin-left: 110px;
+ margin-right: 150px;
+ margin-top: 10px;
+ margin-bottom: 50px;
+ padding: 50px;
+ box-sizing: border-box;
+ top: 200px;
+    
+}
+.gallery{
+     flex: 0 1 calc(33.33% - 20px); /* Divide the available width by 3 for 3 items per row */
+ margin-bottom: 20px;
+ margin-right: 20px; /* Adjust this value to add spacing between products */
+ background-color: rgba(255, 255, 255, 0.8);
+ border-radius: 10px;
+ padding: 8px;
+ box-sizing: border-box;
+ height:auto;
+}
+
+.gallery img{
+      width: 100%; /* Set the width to 100% to make the image fill the container */
+  height: 100%; /* Allow the height to adjust proportionally */
+  max-width: 100%;
+}
+
 nav {
     background-color: #333;
     overflow: hidden;

@@ -101,17 +101,25 @@ nav a:hover {
     border: 0;
     margin: 0;
 }
+
 /*gallery page header and paragraph*/
 
 
 /* Add styles for the header container */
 .header-container {
-    background-color: rgba(17, 16, 16, 0.822); /* Background color with transparency */
-    border-radius: 10px; /* Border radius for rounded corners */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Box shadow for a subtle effect */
-    padding: 20px; /* Padding inside the container */
-    max-width: 800px; /* Maximum width of the container */
-    margin: 20px auto; /* Center the container */
+    background-color: rgba(17, 16, 16, 0.822);
+    /* Background color with transparency */
+    border-radius: 10px;
+    /* Border radius for rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    /* Box shadow for a subtle effect */
+    padding: 20px;
+    /* Padding inside the container */
+    max-width: 800px;
+    /* Maximum width of the container */
+    margin: 20px auto;
+    /* Center the container */
+    background-position: center;
 }
 
 #gallerytext h1 {
@@ -135,29 +143,79 @@ nav a:hover {
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 1200px;
-    margin: 20px auto; /* Center the gallery */
+    margin: 20px auto;
+    /* Center the gallery */
     padding: 20px;
     box-sizing: border-box;
 }
 
 .gallery {
-    flex: 0 1 calc(25% - 20px); /* Adjust the width for 4 items per row */
+    flex: 0 1 calc(25% - 20px);
+    /* Adjust the width for 4 items per row */
     margin-bottom: 20px;
-    border: 2px solid #000000d8; /* Add borders */
-    border-radius: 10px; /* Add border-radius for rounded corners */
-    overflow: hidden; /* Hide overflowing content (e.g., image corners) within the border */
+    border: 2px solid #000000d8;
+    /* Add borders */
+    border-radius: 10px;
+    /* Add border-radius for rounded corners */
+    overflow: hidden;
+    /* Hide overflowing content (e.g., image corners) within the border */
 }
 
 .gallery img {
     width: 100%;
     height: auto;
     max-width: 100%;
-    border-radius: 10px; /* Add border-radius for rounded corners */
+    border-radius: 10px;
+    /* Add border-radius for rounded corners */
 }
 
 .gallery img:hover {
     transform: scale(1.1);
- } /* Scale the image slightly on hover */
+}
+
+/*about me page*/
+
+.about-me-container {
+    background-color: rgba(17, 16, 16, 0.822);
+    /* Background color with transparency */
+    border-radius: 10px;
+    /* Border radius for rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    /* Box shadow for a subtle effect */
+    padding: 30px;
+    /* Padding inside the container */
+    max-width: 600px;
+    /* Maximum width of the container */
+    margin: 20px auto;
+    /* Center the container */
+}
+
+
+.about-me {
+    text-align: center;
+}
+.h1{
+    color: #fff;
+}
+.aboutmetext {
+    width: 500px;
+    font-size: 19px;
+    margin: 20px auto;/* Center the paragraph horizontally with some margin */
+    color: #fff;
+}
+.paragraph{
+    color:#fff;
+}
+.img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px auto; /* Center the image horizontally with some margin */
+}
+
+
+
 
 /* Your existing styles for footer go here */
 
@@ -271,4 +329,3 @@ footer {
         /* Center the text in the footer */
     }
 }
-

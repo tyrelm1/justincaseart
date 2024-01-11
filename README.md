@@ -46,6 +46,7 @@ In this section, you should go over the different parts of your project, and des
 ### Features Left to Implement
 
 - Another feature idea
+-exhibition page
 
 ## Testing 
 

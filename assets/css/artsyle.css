@@ -5,47 +5,35 @@ body {
     background: url("../images/colorful-2174045_1920.png");
     background-size:  auto
 }
-
-label {
-    display: block;
-    margin-bottom: 8px;
-}
-
-button {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-
-.form-box{
-    position:fixed;
-    left:900px;
-    width:700px;
-    height:190px;
-    padding-bottom:100px;
-
-    
-
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-}
-
-button {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
+*/ contact form*//
+form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
 
 .form-box{
     position:fixed;
@@ -57,6 +45,9 @@ button {
     
 
 }
+
+    /* contact form */
+
 
 header {
     background-color: #333;
@@ -67,57 +58,9 @@ header {
     align-items: center;
 }
 
-label {
-    display: block;
-    margin-bottom: 8px;
-}
 
-button {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
+        
 
-
-.form-box{
-    position:fixed;
-    left:900px;
-    width:700px;
-    height:190px;
-    padding-bottom:100px;
-
-    
-
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-}
-
-button {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-
-.form-box{
-    position:fixed;
-    left:900px;
-    width:700px;
-    height:190px;
-    padding-bottom:100px;
-
-    
-
-}
 
 .logo {
     flex-grow: 1;
@@ -548,6 +491,8 @@ footer {
         text-align: center;
         /* Center the text in the footer */
     }
+
+
 }
 
 
@@ -570,6 +515,7 @@ footer {
         width: 100%;
         height: 300px;
     }
+
 }
 
 

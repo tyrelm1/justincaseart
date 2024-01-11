@@ -20,6 +20,15 @@ header {
     flex-grow: 1;
 }
 
+.header-container {
+    background-color: rgba(17, 16, 16, 0.822); /* Background color with transparency */
+    border-radius: 10px; /* Border radius for rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Box shadow for a subtle effect */
+    padding: 20px; /* Padding inside the container */
+    max-width: 800px; /* Maximum width of the container */
+    margin: 20px auto; /* Center the container */
+}
+
 #media-gallerygrid{
      display: flex;
  flex-wrap: wrap;

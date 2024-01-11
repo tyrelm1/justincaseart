@@ -2,7 +2,7 @@
 
 JC is a site that helps Justin express his Art across the world. The site will be targeted towards artists looking to network and find inspiration.
 
-![Responsice Mockup](C:\Users\godly\Downloads\butterfly.png)
+!
 
 ## Features 
 
@@ -46,6 +46,7 @@ In this section, you should go over the different parts of your project, and des
 ### Features Left to Implement
 
 - Another feature idea
+-exhibition page
 
 ## Testing 
 

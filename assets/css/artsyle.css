@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     background: url("../images/colorful-2174045_1920.png");
     background-size: auto
+  
 }
 
 header {
@@ -17,6 +18,60 @@ header {
 
 .logo {
     flex-grow: 1;
+}
+
+.header-container {
+    background-color: rgba(17, 16, 16, 0.822); /* Background color with transparency */
+    border-radius: 10px; /* Border radius for rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Box shadow for a subtle effect */
+    padding: 20px; /* Padding inside the container */
+    max-width: 800px; /* Maximum width of the container */
+    margin: 20px auto; /* Center the container */
+}
+
+#media-gallerygrid{
+     display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ max-width: 1200px;
+ margin-left: 110px;
+ margin-right: 150px;
+ margin-top: 10px;
+ margin-bottom: 50px;
+ padding: 50px;
+ box-sizing: border-box;
+ top: 200px;
+    
+}
+.gallery{
+     flex: 0 1 calc(33.33% - 20px); /* Divide the available width by 3 for 3 items per row */
+ margin-bottom: 20px;
+ margin-right: 20px; /* Adjust this value to add spacing between products */
+ background-color: rgba(255, 255, 255, 0.8);
+ border-radius: 10px;
+ padding: 8px;
+ box-sizing: border-box;
+ height:auto;
+}
+
+.gallery img{
+      width: 100%; /* Set the width to 100% to make the image fill the container */
+  height: 100%; /* Allow the height to adjust proportionally */
+  max-width: 100%;
+}
+
+#gallerytext h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+#gallerytext p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
 }
 
 nav {
@@ -101,17 +156,25 @@ nav a:hover {
     border: 0;
     margin: 0;
 }
+
 /*gallery page header and paragraph*/
 
 
 /* Add styles for the header container */
 .header-container {
-    background-color: rgba(17, 16, 16, 0.822); /* Background color with transparency */
-    border-radius: 10px; /* Border radius for rounded corners */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Box shadow for a subtle effect */
-    padding: 20px; /* Padding inside the container */
-    max-width: 800px; /* Maximum width of the container */
-    margin: 20px auto; /* Center the container */
+    background-color: rgba(17, 16, 16, 0.822);
+    /* Background color with transparency */
+    border-radius: 10px;
+    /* Border radius for rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    /* Box shadow for a subtle effect */
+    padding: 20px;
+    /* Padding inside the container */
+    max-width: 800px;
+    /* Maximum width of the container */
+    margin: 20px auto;
+    /* Center the container */
+    background-position: center;
 }
 
 #gallerytext h1 {
@@ -135,30 +198,73 @@ nav a:hover {
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 1200px;
-    margin: 20px auto; /* Center the gallery */
+    margin: 20px auto;
+    /* Center the gallery */
     padding: 20px;
     box-sizing: border-box;
 }
 
 .gallery {
-    flex: 0 1 calc(25% - 20px); /* Adjust the width for 4 items per row */
+    flex: 0 1 calc(25% - 20px);
+    /* Adjust the width for 4 items per row */
     margin-bottom: 20px;
-    border: 2px solid #000000d8; /* Add borders */
-    border-radius: 10px; /* Add border-radius for rounded corners */
-    overflow: hidden; /* Hide overflowing content (e.g., image corners) within the border */
+    border: 2px solid #000000d8;
+    /* Add borders */
+    border-radius: 10px;
+    /* Add border-radius for rounded corners */
+    overflow: hidden;
+    /* Hide overflowing content (e.g., image corners) within the border */
 }
 
 .gallery img {
     width: 100%;
     height: auto;
     max-width: 100%;
-    border-radius: 10px; /* Add border-radius for rounded corners */
+    border-radius: 10px;
+    /* Add border-radius for rounded corners */
 }
 
 .gallery img:hover {
     transform: scale(1.1);
- } /* Scale the image slightly on hover */
+}
 
+/*about me page*/
+
+.about-me-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.685);
+    border: 2px solid rgba(0, 0, 0, 0.473);
+    border-radius: 10px;
+    margin-top: 0;
+}
+
+.about-me-h1 {
+    color: #fff;
+    text-align: center;
+    
+}
+
+.paragraph {
+    font-size: 19px;
+    color: #fff;
+    text-align: center;
+    margin:0 auto;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.img2 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
 /* Your existing styles for footer go here */
 
 
@@ -167,7 +273,7 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1em;
+    padding: 0;
     bottom: 0;
     width: 100%;
     z-index: 98 !important;
@@ -205,6 +311,8 @@ footer {
     background-color: #ddd;
     color: #333;
 }
+
+
 
 /*media queries with 768px and above*/
 
@@ -271,4 +379,3 @@ footer {
         /* Center the text in the footer */
     }
 }
-

@@ -3,7 +3,33 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background: url("../images/colorful-2174045_1920.png");
-    background-size: auto
+    background-size:  auto
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.form-box{
+    position:fixed;
+    left:900px;
+    width:700px;
+    height:190px;
+    padding-bottom:100px;
+
+    
+
 }
 
 label {
@@ -67,6 +93,32 @@ button {
 
 }
 
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.form-box{
+    position:fixed;
+    left:900px;
+    width:700px;
+    height:190px;
+    padding-bottom:100px;
+
+    
+
+}
+
 .logo {
     flex-grow: 1;
 }
@@ -98,7 +150,6 @@ button {
 }
     
 
-
 .gallery {
     flex: 0 1 calc(25% - 20px);
     /* Divide the available width by 3 for 3 items per row */
@@ -112,6 +163,7 @@ button {
     height: auto;
   
 }
+
 .gallery img {
     width: 100%;
     /* Set the width to 100% to make the image fill the container */
@@ -297,7 +349,96 @@ nav a:hover {
 /* Your existing styles for footer go here */
 
 
+/*iframe google map*/
+#map {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    border: 0;
+    margin: 0;
+}
+
+/*gallery page header and paragraph*/
+
+
+/* Add styles for the header container */
+.header-container {
+    background-color: rgba(17, 16, 16, 0.822);
+    /* Background color with transparency */
+    border-radius: 10px;
+    /* Border radius for rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    /* Box shadow for a subtle effect */
+    padding: 20px;
+    /* Padding inside the container */
+    max-width: 800px;
+    /* Maximum width of the container */
+    margin: 20px auto;
+    /* Center the container */
+    background-position: center;
+}
+
+#gallerytext h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+#gallerytext p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/*about me page*/
+
+.about-me-container {
+    background-color: rgba(17, 16, 16, 0.822);
+    /* Background color with transparency */
+    border-radius: 10px;
+    margin-top: 0;
+}
+
+.about-me-h1 {
+    color: #fff;
+    text-align: center;
+
+}
+
+.paragraph {
+    font-size: 19px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.img2 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* Your existing styles for footer go here */
+
+
 footer {
+    position: fixed;
     position: fixed;
     background-color: #333;
     color: #fff;
@@ -307,7 +448,9 @@ footer {
     width: 100%;
     z-index: 98 !important;
     margin-top: 600px;
+    margin-top: 600px;
 }
+
 
 
 .social-networks {
@@ -339,6 +482,72 @@ footer {
 .cta-button:hover {
     background-color: #ddd;
     color: #333;
+}
+
+/*media queries with 768px and above*/
+
+@media only screen and (max-width: 768px) {
+    #media-gallerygrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .gallery {
+        flex: 0 1 calc(100% - 20px);
+        margin-right: 0;
+    }
+
+    #map {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    /* Adjustments for smaller screens */
+    header {
+        flex-direction: column;
+        /* Stack navigation below the logo on smaller screens */
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        /* Center the navigation links */
+    }
+
+    nav a {
+        padding: 10px;
+        /* Adjust padding for smaller touch targets */
+    }
+
+    .hero {
+        text-align: center;
+        /* Center the text in the hero section */
+    }
+
+    .text-overlay {
+        width: 90%;
+        /* Adjust the width for better readability on smaller screens */
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        /* Adjust button padding for smaller touch targets */
+    }
+
+    .social-networks {
+        margin-top: 20px;
+        /* Increase spacing between social icons */
+    }
+
+    footer {
+        text-align: center;
+        /* Center the text in the footer */
+    }
 }
 
 

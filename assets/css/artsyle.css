@@ -60,6 +60,20 @@ header {
   max-width: 100%;
 }
 
+#gallerytext h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+#gallerytext p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
 nav {
     background-color: #333;
     overflow: hidden;

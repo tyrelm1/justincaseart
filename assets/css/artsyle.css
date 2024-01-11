@@ -98,7 +98,6 @@ button {
 }
     
 
-
 .gallery {
     flex: 0 1 calc(25% - 20px);
     /* Divide the available width by 3 for 3 items per row */
@@ -112,6 +111,7 @@ button {
     height: auto;
   
 }
+
 .gallery img {
     width: 100%;
     /* Set the width to 100% to make the image fill the container */
@@ -341,38 +341,6 @@ nav a:hover {
 }
 
 
-/*gallery grid*/
-#media-gallerygrid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin: 20px auto;
-    /* Center the gallery */
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.gallery {
-    flex: 0 1 calc(25% - 20px);
-    /* Adjust the width for 4 items per row */
-    margin-bottom: 20px;
-    border: 2px solid #000000d8;
-    /* Add borders */
-    border-radius: 10px;
-    /* Add border-radius for rounded corners */
-    overflow: hidden;
-    /* Hide overflowing content (e.g., image corners) within the border */
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    border-radius: 10px;
-    /* Add border-radius for rounded corners */
-}
-
 .gallery img:hover {
     transform: scale(1.1);
 }
@@ -383,40 +351,33 @@ nav a:hover {
     background-color: rgba(17, 16, 16, 0.822);
     /* Background color with transparency */
     border-radius: 10px;
-    /* Border radius for rounded corners */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    /* Box shadow for a subtle effect */
-    padding: 30px;
-    /* Padding inside the container */
-    max-width: 600px;
-    /* Maximum width of the container */
-    margin: 20px auto;
-    /* Center the container */
+    margin-top: 0;
 }
 
-
-.about-me {
+.about-me-h1 {
+    color: #fff;
     text-align: center;
+
 }
-.h1{
-    color: #fff;
-}
-.aboutmetext {
-    width: 500px;
+
+.paragraph {
     font-size: 19px;
-    margin: 20px auto;/* Center the paragraph horizontally with some margin */
     color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+    margin-bottom: 20px;
 }
-.paragraph{
-    color:#fff;
-}
-.img {
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
+
+.img2 {
+    width: 100%;
+    height: auto;
     border-radius: 10px;
-    margin: 20px auto; /* Center the image horizontally with some margin */
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
 }
+
 
 
 

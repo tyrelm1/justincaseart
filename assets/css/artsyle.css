@@ -46,6 +46,7 @@ header {
 }
     
 
+
 .gallery {
     flex: 0 1 calc(25% - 20px);
     /* Divide the available width by 3 for 3 items per row */
@@ -59,7 +60,6 @@ header {
     height: auto;
   
 }
-
 .gallery img {
     width: 100%;
     /* Set the width to 100% to make the image fill the container */
@@ -355,4 +355,5 @@ footer {
         text-align: center;
         /* Center the text in the footer */
     }
+
 }

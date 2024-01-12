@@ -1,52 +1,11 @@
-/* General Styles */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background: url("../images/colorful-2174045_1920.png");
-    background-size: auto;
+    background-size: cover; 
 }
 
- contact form*//
-form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-        
-        label {
-            display: block;
-            margin-bottom: 8px;
-        }
-        
-        input, textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-        }
-        
-        button {
-            background-color: #007BFF;
-            color: #fff;
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-.form-box{
-    position:fixed;
-    left:900px;
-    width:550px;
-    height:190px;
-    padding-bottom:100px;
-
-    
-
-}
 /* Navigation Styles */
 nav {
     background-color: #333;
@@ -54,9 +13,11 @@ nav {
     border-radius: 10px;
 }
 
+
 .nav-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 nav h1 {
@@ -80,7 +41,7 @@ nav a:hover {
     position: relative;
     text-align: center;
     color: #fff;
-    z-index: 99 !important;
+   padding: 100px 0;
 }
 
 .landing-image {
@@ -118,63 +79,6 @@ nav a:hover {
     text-decoration: none;
     border-radius: 5px;
 }
-
-/* Google Map Styles */
-#map {
-    position: relative;
-    width: 100%;
-    height: 600px;
-    border: 0;
-    margin: 0;
-}
-
-/* About Me Styles */
-
-.header-container {
-    background-color: rgba(17, 16, 16, 0.822);
-    border-radius: 0;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    padding: 100px;
-    max-width: 800px;
-    margin: 0px auto 20px;
-    background-position: center;
-}
-.about-me-h1 {
-    color: #fff;
-    text-align: center;
-}
-
-.about-p {
-    font-size: 19px;
-    color: #fff;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 500px;
-    margin-bottom: 20px;
-}
-
-.img2 {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Your existing styles for footer go here */
-
-
-/* Google Map Styles */
-#map {
-    position: relative;
-    width: 100%;
-    height: 600px;
-    border: 0;
-    margin: 0;
-}
-
-/* About Me Styles */
 
 .header-container {
     background-color: rgba(17, 16, 16, 0.822);
@@ -241,13 +145,20 @@ nav a:hover {
 
 
 
-
+.content-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
 
 /* Gallery Styles */
 #media-gallerygrid {
     display: grid;
-    margin: 0 auto;
-    max-width: 600px; /* Set a specific width for your grid container */
+    padding: 90px;
+    margin:  20px auto;
+    max-width: 600px;
+    /* Set a specific width for your grid container */
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
@@ -256,32 +167,40 @@ nav a:hover {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    border: 2px solid transparent; /* Border style */
-    transition: border-color 0.3s; /* Transition for hover effect */
+    border: 2px solid transparent;
+    /* Border style */
+    transition: border-color 0.3s;
+    /* Transition for hover effect */
 }
 
 .gallery:hover {
-    border-color: #fff; /* Border color on hover */
+    border-color: #fff;
+    /* Border color on hover */
 }
 
 .gallery img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the image covers the entire container */
+    object-fit: cover;
+    /* Ensure the image covers the entire container */
     border-radius: 10px;
     display: block;
 }
 
 
 #gallery-text h1 {
-    font-size: 2.5em; /* Adjust font size as needed */
-    color: #fff; /* Set the desired header text color */
+    font-size: 2.5em;
+    /* Adjust font size as needed */
+    color: #fff;
+    /* Set the desired header text color */
     text-align: center;
 }
 
 #gallery-text p {
-    font-size: 16px; /* Adjust font size as needed */
-    color: #fff; /* Set the desired paragraph text color */
+    font-size: 16px;
+    /* Adjust font size as needed */
+    color: #fff;
+    /* Set the desired paragraph text color */
     margin: 0 auto;
     max-width: 500px;
     margin-bottom: 20px;
@@ -298,7 +217,6 @@ nav a:hover {
     padding: 0px;
     bottom: 0;
     width: 100%;
-    z-index: 90%;
 }
 
 
@@ -321,16 +239,23 @@ nav a:hover {
 }
 
 .footer p {
-    margin-top: 10px; /* Adjust the margin as needed */
+    margin-top: 10px;
+    /* Adjust the margin as needed */
 }
 
 /* Contact Form Styles */
+/* Form Styles */
 form {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 90%;
+    /* Make the form width 90% */
+    margin: 20px auto;
+    /* Center the form horizontally */
+    max-width: 400px;
+    /* Add a max-width for better readability on larger screens */
 }
 
 label {
@@ -353,40 +278,33 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 100%;
+    /* Make the button full-width */
 }
 
-.form-box {
-    position: fixed;
-    left: 900px;
-    width: 700px;
-    height: 190px;
-    padding-bottom: 100px;
+/* Add a hover effect to the button */
+button:hover {
+    background-color: #0056b3;
 }
+
+/* Improve the visual feedback for required fields */
+input:required,
+textarea:required {
+    border: 1px solid #007BFF;
+}
+
+#map {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh; /* Adjusted to take the full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
 
 /* Media Queries */
 @media only screen and (max-width: 768px) {
-    #media-gallerygrid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .gallery {
-        flex: 0 1 calc(100% - 20px);
-        margin-right: 0;
-    }
-
-    #map {
-        width: 100%;
-        height: 300px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    header {
-        flex-direction: column;
-    }
-
+    /* Adjust styles for screens up to 768px width */
     .nav-container {
         flex-direction: column;
         align-items: center;
@@ -411,5 +329,45 @@ button {
 
     footer {
         text-align: center;
+    }
+
+    .text-and-iframe,
+    .text-right {
+        text-align: center;
+    }
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 600px) {
+    #media-gallerygrid {
+        margin-top: 0px; 
+    }
+
+    .hero,
+    .text-overlay {
+        width: 100%;
+    }
+
+    .cta-button {
+        padding: 10px;
+    }
+
+    #media-gallerygrid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .gallery {
+        width: 100%;
+    }
+
+    #gallery-text {
+        padding: 0 10px;
+    }
+
+    .form-box {
+        position: static;
+        width: 100%;
+        padding-bottom: 0;
     }
 }

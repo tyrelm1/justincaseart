@@ -3,10 +3,10 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background: url("../images/colorful-2174045_1920.png");
-    background-size: cover; 
+    background-size: cover;
 }
 
-/* Navigation Styles */
+
 nav {
     background-color: #333;
     overflow: hidden;
@@ -36,12 +36,12 @@ nav a:hover {
     color: #333;
 }
 
-/* Hero and Landing Styles */
+
 .hero {
     position: relative;
     text-align: center;
     color: #fff;
-   padding: 100px 0;
+    padding: 100px 0;
 }
 
 .landing-image {
@@ -109,11 +109,10 @@ nav a:hover {
     transform: scale(1.1);
 }
 
-/*about me page*/
+
 
 .about-me-container {
     background-color: rgba(17, 16, 16, 0.822);
-    /* Background color with transparency */
     border-radius: 10px;
     margin-top: 0;
 }
@@ -152,13 +151,13 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
-/* Gallery Styles */
+
 #media-gallerygrid {
     display: grid;
     padding: 90px;
-    margin:  20px auto;
+    margin: 20px auto;
     max-width: 600px;
-    /* Set a specific width for your grid container */
+    
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
@@ -168,21 +167,21 @@ nav a:hover {
     overflow: hidden;
     border-radius: 10px;
     border: 2px solid transparent;
-    /* Border style */
+    
     transition: border-color 0.3s;
-    /* Transition for hover effect */
+   
 }
 
 .gallery:hover {
     border-color: #fff;
-    /* Border color on hover */
+   
 }
 
 .gallery img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Ensure the image covers the entire container */
+    
     border-radius: 10px;
     display: block;
 }
@@ -190,17 +189,17 @@ nav a:hover {
 
 #gallery-text h1 {
     font-size: 2.5em;
-    /* Adjust font size as needed */
+    
     color: #fff;
-    /* Set the desired header text color */
+    
     text-align: center;
 }
 
 #gallery-text p {
     font-size: 16px;
-    /* Adjust font size as needed */
+    
     color: #fff;
-    /* Set the desired paragraph text color */
+    
     margin: 0 auto;
     max-width: 500px;
     margin-bottom: 20px;
@@ -208,7 +207,6 @@ nav a:hover {
     text-align: center;
 }
 
-/* Footer Styles */
 .footer {
     position: fixed;
     background-color: #333;
@@ -240,22 +238,19 @@ nav a:hover {
 
 .footer p {
     margin-top: 10px;
-    /* Adjust the margin as needed */
+  
 }
 
-/* Contact Form Styles */
-/* Form Styles */
+
 form {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 90%;
-    /* Make the form width 90% */
     margin: 20px auto;
-    /* Center the form horizontally */
     max-width: 400px;
-    /* Add a max-width for better readability on larger screens */
+
 }
 
 label {
@@ -279,15 +274,15 @@ button {
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
-    /* Make the button full-width */
+
 }
 
-/* Add a hover effect to the button */
+
 button:hover {
     background-color: #0056b3;
 }
 
-/* Improve the visual feedback for required fields */
+
 input:required,
 textarea:required {
     border: 1px solid #007BFF;
@@ -297,14 +292,14 @@ textarea:required {
     position: absolute;
     bottom: 0;
     width: 100vw;
-    height: 100vh; /* Adjusted to take the full height of the viewport */
-    margin: 0; /* Remove default margin */
+    height: 100vh;
+    margin: 0;
+  
 }
 
 
-/* Media Queries */
+
 @media only screen and (max-width: 768px) {
-    /* Adjust styles for screens up to 768px width */
     .nav-container {
         flex-direction: column;
         align-items: center;
@@ -337,10 +332,9 @@ textarea:required {
     }
 }
 
-/* Media Query for smaller screens */
 @media only screen and (max-width: 600px) {
     #media-gallerygrid {
-        margin-top: 0px; 
+        margin-top: 0px;
     }
 
     .hero,

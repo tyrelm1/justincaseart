@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     background: url("../images/colorful-2174045_1920.png");
     background-size: cover;
+    min-height: 100vh;
 }
 
 
@@ -146,9 +147,10 @@ nav a:hover {
 
 .content-container {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 150px; /* Increased space for the footer */
 }
 
 
@@ -208,13 +210,15 @@ nav a:hover {
 }
 
 .footer {
-    position: fixed;
+   position: fixed;
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 0px;
-    bottom: 0;
+    padding: 0;
+    bottom: 0px;
     width: 100%;
+    z-index: 0;
+    
 }
 
 
@@ -247,6 +251,7 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 header, p {
@@ -258,7 +263,9 @@ header, p {
 
 form {
     width: 300px;
+    max-width: 100%; /* Make the form responsive to smaller screens */
     padding: 20px;
+    margin-top: 20px; /* Added margin to separate form from content */
     border: 1px solid #0c0101;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -337,6 +344,7 @@ textarea:required {
 }
 
 @media only screen and (max-width: 600px) {
+    
     #media-gallerygrid {
         margin-top: 0px;
     }
@@ -363,9 +371,32 @@ textarea:required {
         padding: 0 10px;
     }
 
-    .form-box {
-        position: static;
-        width: 100%;
-        padding-bottom: 0;
+    .content-container {
+        margin-bottom: 0; /* Remove margin for smaller screens */
     }
+
+    form {
+        margin: 30px auto 0; /* Adjusted margin value */
+    }
+    .footer{
+        position: fixed;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 0px;
+        bottom: 0;
+        width: 100%;
+        z-index: 0;
+    }
+        .contact-footer{
+            position: sticky;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 0px;
+            bottom: 0;
+            width: 100%;
+            z-index: 0;
+
+}
 }

@@ -242,16 +242,28 @@ nav a:hover {
 }
 
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header, p {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
 form {
-    background-color: #fff;
+    width: 300px;
     padding: 20px;
+    border: 1px solid #0c0101;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    margin: 20px auto;
-    max-width: 400px;
-
 }
+
 
 label {
     display: block;
@@ -288,14 +300,6 @@ textarea:required {
     border: 1px solid #007BFF;
 }
 
-#map {
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-  
-}
 
 
 

@@ -8,6 +8,9 @@ body {
 }
 
 
+    .form-box{
+        position:flex;
+padding-bottom:600px; 
 nav {
     background-color: #333;
     overflow: hidden;

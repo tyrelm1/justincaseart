@@ -204,13 +204,15 @@ footer {
 }
 
 .gallery {
-    flex: 0 1 calc(20.40% - 10px); /* Divide the available width by 3 for 3 items per row */
+ width: 500px;
+    flex: 0 1 calc(33.33% - 20px);
     margin-bottom: 20px;
-    margin-right: 20px; /* Adjust this value to add spacing between products */
+    margin-right: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     padding: 8px;
     box-sizing: border-box;
+    position: relative;
     height:auto;
 }
 
